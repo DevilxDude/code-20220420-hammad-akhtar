@@ -12,7 +12,7 @@ const Chapter: FC<Props> = ({ chapter }) => {
       <img className={styles.image} src={chapter.image} alt={chapter.title} />
       <div className={styles.description}>
         <h4 className={styles.name}>{chapter.title}</h4>
-        <div>{chapter.description}</div>
+        <div className={styles.info}>{chapter.description}</div>
       </div>
     </div>
   );

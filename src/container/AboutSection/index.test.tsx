@@ -13,9 +13,9 @@ describe('Testing the About Section', () => {
     expect(getByText('Allow us to tell you a short story...')).toBeInTheDocument();
   });
 
-  // it('Should have four chapters', async () => {
-  //   const { findAllByText } = render(<AboutSection />);
+  it('Should have four chapters', async () => {
+    const { findAllByText } = render(<AboutSection />);
 
-  //   expect(await findAllByText('Chapter')).toHaveLength(4);
-  // });
+    expect(await findAllByText('Chapter')).toHaveLength(4);
+  });
 });
