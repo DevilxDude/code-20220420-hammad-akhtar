@@ -1,8 +1,9 @@
 import Title from 'components/Title';
+import styles from './index.module.scss';
 
 const ExploreSection = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Title title="Explore" subtitle="From one-guest rooms to penthouses with pools and gardens" />
     </div>
   );
