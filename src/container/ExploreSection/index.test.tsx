@@ -15,11 +15,9 @@ describe('Testing the Explore Section', () => {
     ).toBeInTheDocument();
   });
 
-  //   it.todo('Should render the Explore Section with a Book Button', () => {
-  //     expect(getByText('Book')).toBeInTheDocument();
-  //   });
+  it('Should render two cards with Book button', async () => {
+    const { findAllByText } = render(<ExploreSection />);
 
-  //   it.todo('Should render two cards with Book button', () => {
-  //     expect(findAllByText('Book')).toHaveLength(2);
-  //   });
+    expect(await findAllByText('Book!')).toHaveLength(2);
+  });
 });
