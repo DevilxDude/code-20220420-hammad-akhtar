@@ -1,4 +1,5 @@
 import ExploreSection from 'container/ExploreSection';
+import 'styles/global.scss';
 
 function App() {
   return (

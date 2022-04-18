@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import styles from './index.module.scss';
 
 interface Props {
   title: string;
@@ -7,9 +8,9 @@ interface Props {
 
 const Title: FC<Props> = ({ title, subtitle }) => {
   return (
-    <div>
-      <h2>{title}</h2>
-      {subtitle && <h3>{subtitle}</h3>}
+    <div className={styles.container}>
+      <h2 className={styles.title}>{title}</h2>
+      {subtitle && <h3 className={styles.subtitle}>{subtitle}</h3>}
     </div>
   );
 };
