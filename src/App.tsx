@@ -1,5 +1,11 @@
+import ExploreSection from 'container/ExploreSection';
+
 function App() {
-  return <div>app</div>;
+  return (
+    <div>
+      <ExploreSection />
+    </div>
+  );
 }
 
 export default App;
