@@ -11,28 +11,16 @@ describe('Testing Entire App', () => {
   });
 
   describe('Should render Explore Section', () => {
-    it('Should have a section with the title Explore', () => {
-      const { getByText } = render(<App />);
-      expect(getByText('Explore')).toBeInTheDocument();
-    });
-
-    it('Should have a two card book buttons', () => {
-      const { getAllByText } = render(<App />);
-
-      expect(getAllByText('Book!')).toHaveLength(2);
+    it('Should have the explore section', () => {
+      const { getByTestId } = render(<App />);
+      expect(getByTestId('explore')).toBeInTheDocument();
     });
   });
 
   describe('Should render About Section', () => {
-    it('Should have a section with the title About', () => {
-      const { getByText } = render(<App />);
-      expect(getByText('About Us')).toBeInTheDocument();
-    });
-
-    it('Should have four chapters', async () => {
-      const { getAllByText } = render(<App />);
-
-      expect(getAllByText(/Chapter/i)).toHaveLength(4);
+    it('Should have the about section', () => {
+      const { getByTestId } = render(<App />);
+      expect(getByTestId('about')).toBeInTheDocument();
     });
   });
 

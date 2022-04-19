@@ -11,7 +11,7 @@ describe('Testing Footer', () => {
   it('Should render copyright on the footer', () => {
     const { getByText } = render(<Footer />);
 
-    expect(getByText('©  2021  Company Name All rights reserved')).toBeInTheDocument();
+    expect(getByText('© 2021 Company Name All rights reserved')).toBeInTheDocument();
   });
 
   it('Should render links for navigation on the footer: explore, about us and cities', () => {
@@ -27,6 +27,6 @@ describe('Testing Footer', () => {
 
     expect(getByText('Call')).toBeInTheDocument();
 
-    expect(getByText('Call')).toHaveAttribute('href', /tel:\+/i);
+    expect(getByText('Call')).toHaveAttribute('href', 'tel:+917894702404');
   });
 });
