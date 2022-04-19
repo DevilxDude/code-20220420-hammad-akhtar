@@ -1,0 +1,17 @@
+.logo {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 5.4rem;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0;
+
+  &.dark {
+    color: #000000;
+  }
+
+  &.light {
+    color: #ffffff;
+  }
+}
