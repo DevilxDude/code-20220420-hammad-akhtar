@@ -5,7 +5,7 @@ import styles from './index.module.scss';
 
 const AboutSection = () => {
   return (
-    <section className={styles.container}>
+    <section id="about" className={styles.container}>
       <Title title="About Us" subtitle="Allow us to tell you a short story..." />
       <div className={styles.grid}>
         {chapters.map((chapter) => (

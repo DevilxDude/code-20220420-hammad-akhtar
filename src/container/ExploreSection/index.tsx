@@ -5,7 +5,7 @@ import styles from './index.module.scss';
 
 const ExploreSection = () => {
   return (
-    <section className={styles.container}>
+    <section id="explore" className={styles.container}>
       <Title title="Explore" subtitle="From one-guest rooms to penthouses with pools and gardens" />
       <div className={styles.row}>
         {rooms.map((room) => (
