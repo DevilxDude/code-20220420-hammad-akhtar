@@ -69,7 +69,10 @@ const BookingForm: FC<Props> = ({ onSubmit }) => {
           placeholder="Add guests"
         />
       </div>
-      <button type="submit">Search</button>
+      <button className={styles.button} type="submit">
+        <img src="/assets/images/search-icon.png" alt="Search Icon" aria-hidden />
+        <span>Search</span>
+      </button>
     </form>
   );
 };

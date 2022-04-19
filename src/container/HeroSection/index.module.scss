@@ -29,6 +29,10 @@
       margin: 3.2rem auto 12rem;
       max-width: 80rem;
 
+      @media (max-width: 768px) {
+        margin: 3.2rem auto;
+      }
+
       h2 {
         color: #fff;
         font-family: 'Exo 2', sans-serif;

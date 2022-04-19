@@ -87,8 +87,7 @@
       }
 
       &:active {
-        transition: 0s;
-        opacity: 1;
+        transform: scale(0.95);
       }
     }
   }
