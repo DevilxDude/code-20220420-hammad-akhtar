@@ -1,0 +1,12 @@
+.section {
+  background-image: url('../../../public/assets/images/hero-section-bg.jpg');
+  .container {
+    padding: 12rem 6.4rem;
+    margin: 0 auto;
+    max-width: 103rem;
+
+    @media (max-width: 768px) {
+      padding: 12rem 3.2rem;
+    }
+  }
+}
