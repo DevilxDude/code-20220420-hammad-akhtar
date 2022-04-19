@@ -10,7 +10,10 @@ describe('Testing Entire App', () => {
   });
 
   describe('Should render Hero Section', () => {
-    it.todo('Should render Hero Section');
+    it('Should render Hero Section', () => {
+      const { getByTestId } = render(<App />);
+      expect(getByTestId('hero')).toBeInTheDocument();
+    });
   });
 
   describe('Should render Explore Section', () => {
