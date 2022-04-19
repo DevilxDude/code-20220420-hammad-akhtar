@@ -1,5 +1,6 @@
-import Logo from 'components/Logo';
 import { FC } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Logo from 'components/Logo';
 import styles from './index.module.scss';
 
 const Footer: FC = () => {
@@ -11,10 +12,14 @@ const Footer: FC = () => {
       </div>
       <ul className={styles.links}>
         <li>
-          <a href="#explore">Explore</a>
+          <AnchorLink offset="100" href="#explore">
+            Explore
+          </AnchorLink>
         </li>
         <li>
-          <a href="#about">About Us</a>
+          <AnchorLink offset="100" href="#about">
+            About Us
+          </AnchorLink>
         </li>
         <li>
           <a href="#null">Cities</a>

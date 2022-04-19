@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import BookingForm from 'components/BookingForm';
 import Title from 'components/Title';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styles from './index.module.scss';
 
 const HeroSection: FC = () => {
@@ -12,9 +13,14 @@ const HeroSection: FC = () => {
         </div>
         <BookingForm />
         <div className={styles.scrollDownContainer}>
-          <a href="#explore" data-testid="scroll-down" className={styles.scrollDownButton}>
+          <AnchorLink
+            offset="100"
+            href="#explore"
+            data-testid="scroll-down"
+            className={styles.scrollDownButton}
+          >
             <img src="/assets/images/chevron-down.png" alt="Scroll Down" />
-          </a>
+          </AnchorLink>
         </div>
       </div>
       <img

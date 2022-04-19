@@ -1,5 +1,6 @@
-import Logo from 'components/Logo';
 import { FC, useEffect, useState } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Logo from 'components/Logo';
 import styles from './index.module.scss';
 
 const Header: FC = () => {
@@ -36,10 +37,14 @@ const Header: FC = () => {
             <div className={styles.barThree} />
           </button>
           <li>
-            <a href="#explore">Explore</a>
+            <AnchorLink offset="100" href="#explore">
+              Explore
+            </AnchorLink>
           </li>
           <li>
-            <a href="#about">About Us</a>
+            <AnchorLink offset="100" href="#about">
+              About Us
+            </AnchorLink>
           </li>
           <li className={styles.hasSubmenu}>
             <a href="#null">Cities</a>
