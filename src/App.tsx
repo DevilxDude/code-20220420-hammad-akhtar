@@ -1,11 +1,13 @@
 import AboutSection from 'container/AboutSection';
 import ExploreSection from 'container/ExploreSection';
 import Footer from 'container/Footer';
+import Header from 'container/Header';
 import 'styles/global.scss';
 
 function App() {
   return (
-    <div>
+    <div id="app">
+      <Header />
       <ExploreSection />
       <AboutSection />
       <Footer />

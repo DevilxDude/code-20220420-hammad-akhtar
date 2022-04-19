@@ -2,8 +2,11 @@ import { render } from '@testing-library/react';
 import App from './App';
 
 describe('Testing Entire App', () => {
-  describe('Should render Menu', () => {
-    it.todo('Should render the Menu');
+  describe('Should render Header', () => {
+    it('Should render Header', () => {
+      const { getByTestId } = render(<App />);
+      expect(getByTestId('header')).toBeInTheDocument();
+    });
   });
 
   describe('Should render Hero Section', () => {
