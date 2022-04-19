@@ -29,11 +29,11 @@ describe('Testing Entire App', () => {
       expect(getByText('About Us')).toBeInTheDocument();
     });
 
-    // it('Should have four chapters', async () => {
-    //   const { findAllByText } = render(<App />);
+    it('Should have four chapters', async () => {
+      const { getAllByText } = render(<App />);
 
-    //   expect(await findAllByText('Chapter')).toHaveLength(4);
-    // });
+      expect(getAllByText(/Chapter/i)).toHaveLength(4);
+    });
   });
 
   describe('Should render Footer Section', () => {
