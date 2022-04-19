@@ -3,7 +3,7 @@ import styles from './index.module.scss';
 
 const Footer: FC = () => {
   return (
-    <footer id="footer" className={styles.container}>
+    <footer id="footer" data-testid="footer" className={styles.container}>
       Footer
     </footer>
   );

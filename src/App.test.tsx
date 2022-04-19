@@ -36,7 +36,10 @@ describe('Testing Entire App', () => {
     });
   });
 
-  describe('Should render Footer Section', () => {
-    it.todo('Should render Footer Section');
+  describe('Should render Footer', () => {
+    it('Should render Footer', () => {
+      const { getByTestId } = render(<App />);
+      expect(getByTestId('footer')).toBeInTheDocument();
+    });
   });
 });
