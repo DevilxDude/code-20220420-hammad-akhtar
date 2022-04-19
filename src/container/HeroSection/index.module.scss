@@ -1,12 +1,75 @@
 .section {
   background-image: url('../../../public/assets/images/hero-section-bg.jpg');
+  position: relative;
+  background-size: cover;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #15141440;
+    z-index: 1;
+  }
+
   .container {
-    padding: 12rem 6.4rem;
+    padding: 12rem 6.4rem 6.4rem;
     margin: 0 auto;
     max-width: 103rem;
+    position: relative;
+    z-index: 1;
 
     @media (max-width: 768px) {
       padding: 12rem 3.2rem;
     }
+
+    .title {
+      margin: 3.2rem auto 12rem;
+      max-width: 80rem;
+
+      h2 {
+        color: #fff;
+        font-family: 'Exo 2', sans-serif;
+        font-size: 10rem;
+        font-weight: 700;
+        line-height: 11rem;
+        letter-spacing: 0;
+        text-align: center;
+        margin-bottom: 3.2rem;
+      }
+
+      h3 {
+        color: #fff;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3.3rem;
+        letter-spacing: 0;
+        text-align: center;
+        max-width: 100%;
+      }
+    }
+
+    .scrollDownContainer {
+      padding: 3.2rem;
+      text-align: center;
+
+      .scrollDownButton {
+        cursor: pointer;
+        display: inline-block;
+        margin: auto;
+        background: transparent;
+        border: none;
+      }
+    }
+  }
+  .sperator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
   }
 }
